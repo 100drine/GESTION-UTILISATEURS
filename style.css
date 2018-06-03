@@ -1,0 +1,16 @@
+form {
+    forme {
+        /* Just to center the form on the page */
+        / * Juste pour centrer le formulaire sur la page * / margin: 0 auto;
+        marge: 0 auto;
+        width: 400px;
+        largeur: 400px;
+    
+        / * Pour voir le contour du formulaire * / padding: 1em;
+        rembourrage: 1em;
+        border: 1px solid #CCC;
+        bordure: 1px solide #CCC;
+        border-radius: 1em;
+        border-radius: 1em;
+    }
+}

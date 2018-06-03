@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="main.js"></script>
+    <title>Gestion d'utilisateurs</title>
+
+</head>
+
+
+<body>
+    <h1>Gestion d'utilisateurs</h1>
+    <form action="/my-handling-form-page" method="post">
+        <div>
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+            <label for="firstName">Prénom</label>
+            <input type="text" id="firstName" name="user_firstName">
+        </div>
+
+        <div>
+            <form>
+                <label for="sexe">sexe</label>
+                <input type="radio" name="subject" value="masculin"> Masculin
+                <input type="radio" name="subject" value="feminin"> Feminin
+            </form>
+        </div>
+        <div>
+            <label for="mail">mail</label>
+            <input type="email" name="user_email">
+        </div>
+        <div>
+            <label for="dateDeNaissance">Date de naissance</label>
+            <input type="date" name="anniversaire">
+        </div>
+        <div>
+            <label for="city">Ville</label>
+            <input type="text" id="city" name="city">
+        </div>
+        <div>
+            <label for="website">site web</label>
+            <input type="url" value="http://" name="website">
+        </div>
+        <div>
+            <label for="phoneNumber">téléphone</label>
+            <input id="telNo" type="tel">
+        </div>
+        <div>
+            <label for="hobbys">hobbys</label>
+            <input type="hobbys" id="hobbys" name="hobbys">
+        </div>
+        <div>
+            <label for="favoriteColor">Couleur préférée</label>
+            <input type="color" value="#fad345" name="textcolor">
+        </div>
+        <div>
+            <label for="login">Login</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div>
+            <label for="password">Mot de passe</label>
+            <input type= "password" id="password" required pattern[0-9] [A-Z][A-Za-z]/>
+
+            <input type="submit" id="submit" value="Se connecter !" />
+        </div>
+
+    </form>
+
+    <!--<input id="prodId" name="prodId" type="hidden" value="xm234jq">-->
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+<!--  Créez un formulaire d'inscription. Dans celui-ci l'utilisateur est invité à saisir : nom, prénom, login (ne doit pas déjà être utilisé), sexe (bouton radio), mot de passe (au moins huit caractères dont au moins une majuscule, un caractère spécial et un chiffre), date de naissance, ville, mail (valide), url de son site (valide), ses hobbys (max 200 caractères), son numéro de téléphone (XX.XX.XX.XX.XX) ainsi que sa couleur préférée.
+    Bonus : implémenter l'autocomplétion pour la ville.
+    Bonus 2: pas besoin de soumettre le formulaire pour contrôler les champs.
+    Stocker les données récupérées. Ce peut être l'occasion de jeter un oeil au localStorage introduit par HTML5.
+    Créez un formulaire de connexion. L'utilisation saisit un login et un mdp. Si les deux correspondent, on l'autorise à se connecter et on l'accueille avec un message du type : "Bienvenue <prénom> ".-->
